@@ -34,4 +34,4 @@ jobs:
 
       - name: Build
         run: |
-             maven clear install
+             mvn clean install
