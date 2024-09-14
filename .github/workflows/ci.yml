@@ -31,7 +31,3 @@ jobs:
 
       - name: install maven
         uses: stCarolas/setup-maven@v5
-
-      - name: build with maven
-        run: |
-          mvn clean install
