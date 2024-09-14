@@ -1,0 +1,22 @@
+name: Build
+
+on:
+ push:
+   branches:
+     - main
+ pull_request:
+   branches:
+     - main
+ workflow_dispatch:
+ workflow_call:
+
+
+jobs:
+  build:
+    runs-on: "self-hosted"
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - uses: actions/checkout@v3
