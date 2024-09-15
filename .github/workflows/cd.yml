@@ -2,8 +2,7 @@ name: Continous Deployment
 On:
   push :
     branches:
-
-     -main
+      - main
   workflows_dispatch:
 
 jobs:
